@@ -1,0 +1,273 @@
+@charset "utf-8";
+@font-face {
+    src:url('font/FontAwesome.otf') format('opentype');
+    font-family:'awesome';
+}
+@font-face {
+    src:url('font/fontawesome-webfont.ttf') fomat('truetype');
+    font-family:'awesome_web';
+}
+@font-face {
+    src:url('font/Pe-icon-7-stroke.ttf') format('truetype');
+    font-family:'pe-icon';
+}
+
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    box-sizing:border-box;
+}
+
+html {
+    font-size:0.625em;
+    font-family: Work Sans, sans-serif;
+    letter-spacing: 0.003rem;
+}
+
+h1,h2,h3,h4{
+    margin:0;
+}
+
+a{
+    text-decoration:none;
+}
+
+.clear:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.card__image {
+    width:100%;
+    height:auto;
+    overflow:hidden;
+}
+
+.header__menu,
+.logo--fixed {
+    display:none;
+}
+
+.section__container {
+    padding:14% 4%;
+}
+
+.section__title {
+    text-align:center;
+    font-family:Playfair Display, serif;
+    font-size:3.9rem;
+    margin-bottom:10%;
+}
+
+.section__docs {
+    font-size:1.5rem;
+    color:#5f5f5f;
+    text-align:center;
+    line-height: 1.5;
+}
+/* /reset */
+
+.header {
+    float:left;
+    width:100%;
+    height:99px;
+}
+
+.header-logo__wrap {
+    position:absolute;
+    top:0;
+    left:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    padding:10% 4%;
+}
+
+.header__logo--linked {
+    display:block;
+}
+
+.logo {
+    width:84px;
+}
+
+.hamber-menu__icon {
+    display:block;
+    height:2px;
+    width:20px;
+    background-color:#252525;
+    margin:6px 0;
+}
+
+/* nav */
+.header__menu__title {
+    text-indent:-9999px;
+}
+
+.header-logo__wrap {
+    z-index:1;
+}
+
+.hamber-menu__icon {
+    background-color:#fff;
+}
+
+.header__menu {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #000 url(../img/image/bg-menu.jpg)no-repeat center/cover;
+}
+
+.header__nav {
+    font-family:Playfair Display,serif;
+    text-transform:capitalize;
+    font-size:2.5rem;
+    text-align:center;
+    padding-top:50%;
+}
+
+.header__nav__list {
+    display:block;
+    color:#d8d8d8;
+    padding:10% 0;
+}
+
+.nav__footer-mobile {
+    position:absolute;
+    bottom:10%;
+    left:0;
+    width:100%;
+}
+
+.footer__sns__icon {
+    display:flex;
+    justify-content:space-around;
+    padding:0 24%;
+}
+
+.sns__icon {
+    font-family:awesome;
+    font-size:1.6rem;
+    color:#d8d8d8;
+}
+
+.twitter:before {
+    content:"\f099";
+}
+
+.facebook:before {
+    content:"\f09a";
+}
+
+.dribbble:before {
+    content:"\f17d";
+}
+
+.instagram:before {
+    content:"\f16d";
+}
+/* /nav */
+
+/* hero */
+.hero {
+    position:relative;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+.hero__bg {
+    background: #000 url(../img/image/home_main.jpg)no-repeat center/cover;
+    height:100vh;
+}
+
+.hero__bg:before {
+    content:"";
+    display:block;
+    width:100%;
+    height:100%;
+    background: rgba(12, 12, 12, 0.6);
+}
+
+.hero__contents {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    padding-top:99px;
+    width:100%;
+    color:#fff;
+    text-align:center;
+}
+
+.hero__text {
+    font-size: 1.5rem;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+.hero__title {
+    padding:0 4%;
+    line-height: 1.2;
+    font-family:Playfair Display, serif;
+    font-size:5rem;
+}
+
+.hero__title--strong {
+    display:block;
+    font-style:italic;
+    font-weight:400;
+}
+
+.hero__down__btn {
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border:1px solid #fff;
+    border-radius:100%;
+    margin:30% auto 0;
+}
+
+.hero__down__btn__arrow {
+    width:100%;
+    height:100%;
+    display:block;
+    font-family:pe-icon;
+    font-size:2.5rem;
+    color:#fff;
+}
+
+.hero__down__btn__arrow:before {
+    content:"\e688";
+}
+/* /hero */
+
+.agency__sign {
+    width:100%;
+    height:57px;
+    margin-top:10%;
+    background: url(../img/image/about-me-signature.png)no-repeat center/contain;
+}
+
+.agency__figure {
+    background:#000 url(../img/image/bg-pattern.jpg)no-repeat center/cover;
+}
+
+.agency__icon {
+    color:#fff;
+    padding: 10% 8% 0;
+    font-size: 2.2rem;
+    line-height: 1.4;
+}
+
+.agency__text {
+    text-transform:uppercase;
+    font-size: 1.4rem;
+}

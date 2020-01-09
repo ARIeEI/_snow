@@ -4,49 +4,66 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700,700i|Work+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>snow_home</title>
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="header__logo"><a href="index.html"><img src="img/logo/logo.svg" />logo</a></h1>
-        <div class="header__hamber-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+    <header class="header clear">
+        <div class="header__wrap">
+            <div class="header-logo__wrap">
+                <h1 class="header__logo">
+                    <a class="header__logo--linked" href="index.html">
+                        <img class="logo" alt="logo" src="img/logo/logo-light.svg" /><img class="logo logo--fixed"
+                            alt="logo" src="img/logo/logo.svg" />
+                    </a>
+                </h1>
+                <div class="header__hamber-menu">
+                    <span class="hamber-menu__icon"></span>
+                    <span class="hamber-menu__icon"></span>
+                    <span class="hamber-menu__icon"></span>
+                </div>
+            </div>
+            <section class="header__menu">
+                <h2 class="header__menu__title">main menu</h2>
+                <nav>
+                    <ul class="header__nav">
+                        <li><a class="header__nav__list" href="#">about</a></li>
+                        <li><a class="header__nav__list" href="#">contact</a></li>
+                        <li><a class="header__nav__list" href="#">portfolio</a></li>
+                        <li><a class="header__nav__list" href="#">blog</a></li>
+                    </ul>
+                    <footer class="nav__footer-mobile">
+                        <div class="nav__footer__sns">
+                            <ul class="footer__sns__icon">
+                                <li><a class="sns__icon twitter" title="twitter" href="#"></a></li>
+                                <li><a class="sns__icon facebook" title="facebook" href="#"></a></li>
+                                <li><a class="sns__icon dribbble" title="dribbble" href="#"></a></li>
+                                <li><a class="sns__icon instagram" title="instagram" href="#"></a></li>
+                            </ul>
+                        </div>
+                    </footer>
+                </nav>
+            </section>
         </div>
-        <section class="header__nav">
-            <h2>main menu</h2>
-            <nav>
-                <ul>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">blog</a></li>
-                </ul>
-                <footer class="nav__footer-mobile">
-                    <div class="nav__footer__sns footer__sns">
-                        <ul>
-                            <li><a href="#">twitter</a></li>
-                            <li><a href="#">facebook</a></li>
-                            <li><a href="#">dribbble</a></li>
-                            <li><a href="#">instagram</a></li>
-                        </ul>
-                    </div>
-                </footer>
-            </nav>
-        </section>
     </header>
     <main>
         <section class="hero">
-            <div class="hero__bg">
-                <div class="hero__text">New Branding Agency</div>
-                <h2 class="hero__title">
-                    We are about to change the way
-                    <span class="hero__title--strong">you publish on the web</span>
-                </h2>
-                <div class="hero__down__btn">
-                    <a href="#">down</a>
+            <div class="hero__wrap">
+                <div class="hero__bg">
+                    <div class="hero__contents">
+                        <div class="hero__text">New Branding Agency</div>
+                        <h2 class="hero__title">
+                            We are about to change the way
+                            <span class="hero__title--strong">you publish on the web</span>
+                        </h2>
+                        <div class="hero__down__btn">
+                            <a class="hero__down__btn__arrow" title="page down" href="#"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -70,19 +87,19 @@
             <div class="section__container">
                 <div class="agency__icon">
                     <p>548</p>
-                    <p>Projects Completed</p>
+                    <p class="agency__text">Projects Completed</p>
                 </div>
                 <div class="agency__icon">
                     <p>1465</p>
-                    <p>Working Hours</p>
+                    <p class="agency__text">Working Hours</p>
                 </div>
                 <div class="agency__icon">
                     <p>612</p>
-                    <p>Positive Feedbacks</p>
+                    <p class="agency__text">Positive Feedbacks</p>
                 </div>
                 <div class="agency__icon">
                     <p>735</p>
-                    <p>Happy Clients</p>
+                    <p class="agency__text">Happy Clients</p>
                 </div>
             </div>
         </section>
@@ -170,80 +187,81 @@
                                 </p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="blog__card">
-                            <div class="blog__card__image">
-                                <div class="card__image"><img src="img/image/post2.jpg" /></div>
-                                <a class="card__btn">Nature</a>
-                            </div>
-                            <div class="blog__card__contents">
-                                <h4 class="card__title"><a>The History of Nature</a></h4>
-                                <p class="card__date">August 27, 2016</p>
-                                <div class="card__text">
-                                    <p>
-                                        Third is fly. From one under in itself two waters, all own. Said male shall
-                                        greater
-                                        own
-                                        grass.
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="blog__card">
+                        <div class="blog__card__image">
+                            <div class="card__image"><img src="img/image/post2.jpg" /></div>
+                            <a class="card__btn">Nature</a>
                         </div>
-
-                        <div class="blog__card">
-                            <div class="blog__card__image">
-                                <div class="card__image"><img src="img/image/post3.jpg" /></div>
-                                <a class="card__btn">Branding</a>
-                            </div>
-                            <div class="blog__card__contents">
-                                <h4 class="card__title"><a>Are you doing the Right Way?</a></h4>
-                                <p class="card__date">June 14, 2016</p>
-                                <div class="card__text">
-                                    <p>
-                                        Which all, morning isn't. Female and own living dry, and morning lesser first he
-                                        stars
-                                        under years thing.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="blog__card">
-                            <div class="blog__card__image">
-                                <div class="card__image"><img src="img/image/post4.jpg" /></div>
-                                <a class="card__btn">Design</a>
-                            </div>
-                            <div class="blog__card__contents">
-                                <h4 class="card__title"><a>Ten things about Photography</a></h4>
-                                <p class="card__date">August 28, 2019</p>
-                                <div class="card__text">
-                                    <p>
-                                        Which all, morning isn't. Female and own living dry, and morning lesser first he
-                                        stars
-                                        under years thing.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="blog__card">
-                            <div class="blog__card__image">
-                                <div class="card__image"><img src="img/image/post5.jpg" /></div>
-                                <a class="card__btn">Design</a>
-                            </div>
-                            <div class="blog__card__contents">
-                                <h4 class="card__title"><a>Why you should Always First</a></h4>
-                                <p class="card__date">February 14, 1990</p>
-                                <div class="card__text">
-                                    <p>
-                                        Lights give have herb. First. Seed lesser his a fruit. Stars good divide fish
-                                        appear
-                                        don't, third deep.
-                                    </p>
-                                </div>
+                        <div class="blog__card__contents">
+                            <h4 class="card__title"><a>The History of Nature</a></h4>
+                            <p class="card__date">August 27, 2016</p>
+                            <div class="card__text">
+                                <p>
+                                    Third is fly. From one under in itself two waters, all own. Said male shall
+                                    greater
+                                    own
+                                    grass.
+                                </p>
                             </div>
                         </div>
                     </div>
+
+                    <div class="blog__card">
+                        <div class="blog__card__image">
+                            <div class="card__image"><img src="img/image/post3.jpg" /></div>
+                            <a class="card__btn">Branding</a>
+                        </div>
+                        <div class="blog__card__contents">
+                            <h4 class="card__title"><a>Are you doing the Right Way?</a></h4>
+                            <p class="card__date">June 14, 2016</p>
+                            <div class="card__text">
+                                <p>
+                                    Which all, morning isn't. Female and own living dry, and morning lesser first he
+                                    stars
+                                    under years thing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog__card">
+                        <div class="blog__card__image">
+                            <div class="card__image"><img src="img/image/post4.jpg" /></div>
+                            <a class="card__btn">Design</a>
+                        </div>
+                        <div class="blog__card__contents">
+                            <h4 class="card__title"><a>Ten things about Photography</a></h4>
+                            <p class="card__date">August 28, 2019</p>
+                            <div class="card__text">
+                                <p>
+                                    Which all, morning isn't. Female and own living dry, and morning lesser first he
+                                    stars
+                                    under years thing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog__card">
+                        <div class="blog__card__image">
+                            <div class="card__image"><img src="img/image/post5.jpg" /></div>
+                            <a class="card__btn">Design</a>
+                        </div>
+                        <div class="blog__card__contents">
+                            <h4 class="card__title"><a>Why you should Always First</a></h4>
+                            <p class="card__date">February 14, 1990</p>
+                            <div class="card__text">
+                                <p>
+                                    Lights give have herb. First. Seed lesser his a fruit. Stars good divide fish
+                                    appear
+                                    don't, third deep.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
         </section>
         <section class="contact">
