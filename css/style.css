@@ -386,6 +386,50 @@ a{
 }
 /* /slide */
 
+/* clients */
+.clients__icon {
+    display:flex;
+    flex:1;
+    overflow:scroll;
+}
+
+[class*=clients__icon_] {
+    display:inline-block;
+    width:200px;
+    padding-bottom:100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    
+}
+
+.clients__icon__01 {
+    background-image:url(../img/image/partner-logo-01.png);
+}
+.clients__icon__02 {
+    background-image:url(../img/image/partner-logo-02.png);
+}
+.clients__icon__03 {
+    background-image:url(../img/image/partner-logo-03.png);
+}
+.clients__icon__04 {
+    background-image:url(../img/image/partner-logo-04.png);
+}
+.clients__icon__05 {
+    background-image:url(../img/image/partner-logo-05.png);
+}
+.clients__icon__06 {
+    background-image:url(../img/image/partner-logo-06.png);
+}
+.clients__icon__07 {
+    background-image:url(../img/image/partner-logo-07.png);
+}
+.clients__icon__08 {
+    background-image:url(../img/image/partner-logo-08.png);
+}
+
+/* /clients */
+
 /* blog */
 .blog {
     background-color:#f6f6f6;
