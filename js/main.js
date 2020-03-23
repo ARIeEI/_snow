@@ -6,6 +6,7 @@ menu_button.on('click',function(){
     menu.toggleClass('open');
     menu_bar.toggleClass('menu__active');
     menu_list.fadeToggle();
+
 });
 
 if($(window).width() <= 768){
