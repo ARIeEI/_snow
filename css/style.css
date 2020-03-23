@@ -100,6 +100,7 @@ a{
 .header__logo--linked {
     display:block;
     position:relative;
+    width:28%;
     height:100%;
 }
 
@@ -113,8 +114,9 @@ a{
 /* nav */
 .header__hamber-menu {
     position:relative;
-    width:20px;
-    height:30%;
+    width:30px;
+    height:32%;
+    cursor:pointer;
 }
 
 .header__hamber-menu:before,
@@ -126,6 +128,7 @@ a{
     height:2px;
     background-color:#fff;
     transition:all .3s;
+    transition-delay:.1s;
 }
 
 .header__hamber-menu:before{
@@ -133,7 +136,7 @@ a{
 }
 
 .header__hamber-menu:after {
-    bottom:0;
+    top:calc(100% - 2px);
 }
 
 .hamber-menu__icon {
@@ -236,18 +239,15 @@ a{
 .header.open .header__hamber-menu:before{
     top:50%;
     transform:rotate(45deg) translateY(-50%);
-
 }
 
 .header.open .header__hamber-menu:after{
     top:50%;
-    bottom:auto;
     transform:rotate(-45deg) translateY(-50%);
-
 }
 
 .header.open .hamber-menu__icon {
-    transform:translateX(50%);
+    transform:translateX(20%);
     opacity:0;
 }
 
